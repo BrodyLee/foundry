@@ -1,0 +1,128 @@
+@import "../../common/variables.less";
+
+.b-catering {
+  @media (max-width: @max-width-1380) {
+    height: auto;
+  }
+  height: 856px;
+  position: relative;
+  overflow: hidden;
+  margin-top: @site-sections-vertical-margin;
+  &__image {
+    @media (max-width: @max-width-1380) {
+      position: relative;
+      top: 0;
+      margin: 0;
+      height: auto;
+      line-height: 0;
+    }
+    @media (max-width: @max-width-1024) {
+      position: absolute;
+      height: @b-catering__image-height;
+      line-height: @b-catering__image-height;
+      margin: -(@b-catering__image-height / 2) 0 0;
+      top: 50%;
+    }
+    @media (max-width: @max-width-750) {
+      position: relative;
+      top: 0;
+      margin: 0;
+      height: auto;
+      line-height: 0;
+    }
+    position: absolute;
+    height: @b-catering__image-height;
+    line-height: @b-catering__image-height;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 50%;
+    font-size: 0;
+    margin: -(@b-catering__image-height / 2) 0 0;
+    > img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      border: none;
+    }
+  }
+  &__content {
+    @media (max-width: @max-width-1380) {
+      padding: 73px 32px 73px 45px;
+      width: 625px;
+    }
+    @media (max-width: @max-width-1250) {
+      width: 50%;
+      padding: 60px;
+    }
+    @media (max-width: @max-width-1024) {
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+    @media (max-width: @max-width-880) {
+      padding: 40px;
+    }
+    @media (max-width: @max-width-750) {
+      padding: 27px;
+    }
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 43.5%;
+    background: rgba(255, 255, 255, 0.83);
+    box-sizing: border-box;
+    padding: 109px 5.05% 0 7.47%;
+  }
+  &__title {
+    @media (max-width: @max-width-750) {
+      font-size: 38px;
+      line-height: 53px;
+    }
+    color: @color-orange;
+    font: 54px/67px 'ApercuBold';
+  }
+  &__text {
+    @media (max-width: @max-width-750) {
+      padding: 23px 0 0;
+      font-size: 16px;
+      line-height: 38px;
+    }
+    color: @color-text;
+    font-size: 18px;
+    line-height: 33px;
+    padding: 30px 0 0;
+  }
+  &__link {
+    @media (max-width: @max-width-750) {
+      display: none;
+    }
+    margin-top: 33px;
+    > a {
+      font-size: 16px;
+      line-height: 33px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: @color-red-3;
+      transition: color 0.3s ease;
+      &:hover {
+        color: @color-hover;
+      }
+    }
+  }
+  .b-btn-rounded-red {
+    @media (max-width: @max-width-750) {
+      margin-top: 48px;
+      font-size: 20px;
+      letter-spacing: -0.2px;
+    }
+    font-size: 18px;
+    margin-top: 40px;
+    letter-spacing: -0.6px;
+    height: 50px;
+    line-height: 50px;
+  }
+}

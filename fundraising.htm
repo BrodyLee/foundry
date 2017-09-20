@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Storefront Redesign - Home Page</title>
+	<link href='http://f4.cfarestaurant.com/Skins/CFA_Blue/Styles/blueskin.css' rel="stylesheet" type="text/css" />
+	<link href='http://f4.cfarestaurant.com/controlpanel/Styles/admin.css' rel="stylesheet" type="text/css" />
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="scripts/TFACMS.js"></script>
+	<script type="text/javascript" src="scripts/storefront.js"></script>
+	<script>
+cfg.storename = 'bakerlane';
+var isAdmin = true; // (getParameterByName('mode') == 'admin');
+
+function jsonp(o) {
+	console.log(o);
+	RenderMenu();
+	RenderImageArea(o.Community.Fundraising.Image);
+	RenderTextArea(o.Community.Fundraising.Text);
+	$('.b-header__logo>span').text(o.Store.storeInfo.StoreName);
+	$('.b-header__logo').attr('href', o.Store.storeInfo.MarketableURL);
+	return o;
+}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

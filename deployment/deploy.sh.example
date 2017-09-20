@@ -1,0 +1,21 @@
+#!/bin/bash
+source /home/deployer/.profile
+SCRIPT_PATH=$(dirname `which $0`)
+cd $SCRIPT_PATH
+ 
+# deploy.sh is supposed to be in ./deployment folder of the repo so we need to cd ..
+cd ..
+
+echo >> deployment/deployment.log
+date >> deployment/deployment.log
+
+echo GIT PULL... >> deployment/deployment.log
+git pull
+
+echo NPM INSTALL... >> deployment/deployment.log
+npm install
+
+echo GRUNT COMPILE... >> deployment/deployment.log
+grunt compile >> deployment/deployment.log
+
+echo DONE >> deployment/deployment.log

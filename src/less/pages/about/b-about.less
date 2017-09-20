@@ -1,0 +1,271 @@
+@import "../../common/variables.less";
+
+.g-about {
+  h3 {
+    line-height: 1.46;
+    font-size: 54px;
+    font-family: ApercuBold, sans-serif;
+  }
+}
+
+.b-here-to-serve {
+  background-image: url("../images/here-to-serve.jpg");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1440px) {
+    background-image: url("../images/here-to-serve@2x.jpg");
+  }
+
+  &__outer {
+    padding-top: 58px;
+    max-width: 1265px;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+  h3 {
+    color: @color-title;
+    margin-bottom: 28px;
+  }
+  &__serve-img {
+    margin-top: 41px;
+    width: 47%;
+    text-align: right;
+  }
+  p {
+    font-size: 17px;
+    line-height: 1.94;
+    text-align: left;
+    color: @color-title;
+    margin-bottom: 45px;
+    a {
+      color: @color-link;
+    }
+    &:last-child {
+      margin-bottom: 157px;
+    }
+  }
+  &__serve-description {
+    width: 52%;
+  }
+}
+
+.b-hands {
+  background-image: url("../images/bricks.jpg");
+  height: 370px;
+  background-size: contain;
+  position: relative;
+  @media (min-width: 1900px) {
+    background-image: url("../images/bricks@2x.jpg");
+    height: 480px;
+  }
+
+  &__operator-hand {
+    position: absolute;
+    top: 41px;
+    left: 0;
+  }
+  &__client-hand {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.b-about-fundraising {
+  background-color: #f4f8f9;
+  padding-top: 69px;
+  height: 100%;
+  overflow: hidden;
+  h2 {
+    font: 68px/100px 'ApercuBold';
+    line-height: 1.16;
+    text-align: center;
+    color: #545353;
+    margin-bottom: 27px;
+  }
+  p {
+    font-size: 17px;
+    text-align: center;
+    color: @color-title;
+    line-height: 2.06;
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__content {
+    width: 50.3%;
+    margin: 0 auto 85px;
+  }
+  .b-btn-rounded-red {
+    padding: 0 61px;
+    line-height: 54px;
+    height: 54px;
+    margin: 0 auto 89px;
+    display: table;
+  }
+}
+
+.b-about-family {
+  height: 535px;
+  background-color: #79a4e0;
+  position: relative;
+  overflow: hidden;
+  &__outer {
+    max-width: 1265px;
+    width: 100%;
+    margin: auto;
+  }
+  &__description {
+    padding-top: 83px;
+    width: 50%;
+    h3 {
+      color: #fff;
+      margin-bottom: 18px;
+    }
+    p {
+      font-size: 17px;
+      line-height: 1.94;
+      color: #ffffff;
+      margin-bottom: 70px;
+
+    }
+    .b-btn-rounded-red {
+      padding: 0 46px;
+    }
+  }
+  &__img {
+    position: absolute;
+    right: -105px;
+    top: -55px;
+  }
+}
+
+@media (min-width: 1920px ) {
+  .b-about-family__img {
+    right: 15%;
+  }
+}
+
+@media (max-width: 1300px ) {
+  .b-here-to-serve__outer {
+    margin: 0 5%;
+    width: auto;
+  }
+  .b-about-family__description {
+    margin-left: 5%;
+    padding-top: 83px;
+    width: 45%;
+  }
+}
+
+@media (max-width: @max-width-1024) {
+  .b-hands img {
+    height: 75%;
+  }
+  .b-about-family {
+    height: auto;
+
+  &__outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 0 5%;
+  }
+
+  &__description {
+    order: 1;
+    padding-top: 20px;
+    margin: 0;
+    width: 100%;
+  }
+
+  &__img {
+    position: static;
+    margin-top: -60px;
+    width: 100%;
+  }
+  }
+  .b-about-family__description .b-btn-rounded-red {
+    display: table;
+    margin: 0 auto 51px;
+  }
+}
+
+@media (max-width: @max-width-768 ) {
+  .b-here-to-serve__serve-img {
+    display: none;
+  }
+
+  .b-here-to-serve__serve-description {
+    width: 100%;
+  }
+
+  .b-here-to-serve__outer {
+    padding-top: 49px;
+  }
+
+  .g-about h3 {
+    font-size: 34px;
+    font-family: ApercuBold, sans-serif;
+  }
+
+  .b-here-to-serve p {
+    font-size: 16px;
+  }
+
+  .b-here-to-serve p:last-child {
+    margin-bottom: 23px;
+  }
+
+  .b-hands {
+    height: 130px;
+  }
+
+  .b-hands img {
+    height: 98%;
+  }
+
+  .b-about-fundraising {
+    padding-top: 29px;
+    &__content {
+      width: auto;
+      margin: 0 5% 70px;
+    }
+    p {
+      margin-bottom: 25px;
+    }
+    h2 {
+      font-size: 34px;
+      margin-bottom: 12px;
+      height: 79px;
+      line-height: 79px;
+    }
+    .b-btn-rounded-red {
+      padding: 0 88px;
+      line-height: 47px;
+      height: 47px;
+      margin: 0 auto 59px;
+
+    }
+  }
+
+  .b-about-family__description p {
+    margin-bottom: 35px;
+  }
+
+  .b-about-family__description .b-btn-rounded-red {
+    padding: 0 86px;
+  }
+}
+
+@media (max-width: 600px) {
+  .b-about-family__img {
+    margin-right: -150px;
+  }
+}
+
+

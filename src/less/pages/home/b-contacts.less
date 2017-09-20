@@ -1,0 +1,113 @@
+@import "../../common/variables.less";
+
+.b-contacts {
+  @media (max-width: @max-width-1160) {
+    padding: 4px 18px 18px;
+  }
+  @media (max-width: @max-width-1100) {
+    padding: 0;
+  }
+  @media (max-width: @max-width-1024) {
+    text-align: center;
+  }
+  padding: 4px 166px 32px 65px;
+  &__title {
+    font: 24px/44px 'ApercuBold';
+    color: @color-gray;
+    padding: 17px 0 7px;
+    margin: 0;
+    @media (max-width: @max-width-1024) {
+      padding: 0;
+      line-height: 87px;
+      font-size: 20px;
+    }
+  }
+  &__content {
+    @media (max-width: @max-width-1024) {
+      font-size: 15px;
+      padding-top: 0;
+    }
+    padding-top: 10px;
+    font-size: 17px;
+    line-height: 28px;
+  }
+  &__top {
+    color: @color-red-2;
+    overflow: hidden;
+    > a {
+      display: inline-block;
+      vertical-align: top;
+      text-decoration: none;
+      color: @color-red-2;
+      transition: color 0.3s ease;
+      &:hover {
+        color: @color-hover;
+      }
+    }
+  }
+  &__address {
+    @media (max-width: @max-width-1024) {
+      float: none;
+      width: auto;
+      padding: 0;
+    }
+    float: left;
+    width: 65%;
+    box-sizing: border-box;
+    padding-right: 10px;
+  }
+  &__phone {
+    clear: both;
+  }
+  &__schedule {
+    color: @color-gray-2;
+    font-size: 0;
+    line-height: 0;
+    span {
+      @media (max-width: @max-width-1024) {
+        font-size: 15px;
+        width: 33.33333333%;
+      }
+      @media (max-width: @max-width-650) {
+        width: 50%;
+      }
+      display: inline-block;
+      vertical-align: top;
+      font-size: 17px;
+      line-height: 28px;
+    }
+    span + span {
+      margin-left: 10px;
+      @media (max-width: @max-width-1024) {
+        margin-left: 0;
+      }
+    }
+    &.m-wide {
+      @media (max-width: @max-width-1024) {
+        padding: 0;
+      }
+      padding-top: 28px;
+    }
+  }
+  .b-social-icons {
+    @media (max-width: @max-width-650) {
+      padding-top: 38px;
+    }
+    padding-top: 18px;
+    label {
+      line-height: 38px;
+    }
+    &__item {
+      height: 36px;
+      width: 36px;
+      line-height: 38px;
+      font-size: 24px;
+    }
+  }
+  &.m-wide {
+    @media (max-width: @max-width-1024) {
+      padding: 0;
+    }
+    padding: 4px 0 60px 67px;
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storefront Redesign - Home Page</title>
+    <link rel="stylesheet" href="dist/css/style.min.css" type="text/css" media="all">
+    <script src="dist/js/plugins.js"></script>
+    <script src="dist/js/main.js"></script>
+    <script>
+        var cfg = {
+            IMG_BASE: 'http://f4.cfarestaurant.com',
+            JSON_BASE: 'http://f4.features.cfarestaurant.com.s3.amazonaws.com/storefront/stores',
+            store: 'bakerlane',
+        };
+        function jsonp(o) {
+            console.log(o);
+            /*$('.b-header__logo>span').text(o.Store.storeInfo.StoreName);
+            $('.b-header__logo').attr('href', o.Store.storeInfo.MarketableURL);*/
+            return o;
+        }
+        (function() {
+            var storefrontJSON = cfg.JSON_BASE + '/' + cfg.store + '/' + cfg.store + '.jsonp?jsoncallback=?';
+            $.getJSON(storefrontJSON);
+        })();
+    </script>
+</head>
+<body>
+
+<div class="site-wrapper">
+
+    <!-- Header -->
+    <header class="b-header" id="siteHeader">
+        <div class="container">
+            <a href="#" class="b-header__logo">
+                <img src="dist/images/b-header__logo.png" alt="" title="">
+                <span>Seneca</span>
+            </a>
+            <a href="#" class="b-header__logo-small">
+                <img src="dist/images/b-header__logo-small.jpg" alt="" title="">
+                <span>Seneca</span>
+            </a>
+            <a href="#" class="b-btn-rounded-red">Order Food</a>
+            <ul class="b-header__menu">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- end Header -->
+
+    <div class="site-container m-home" id="siteContainer">
+        <div class="b-banner-top" id="bBannerTop">
+            <div class="b-banner-top__image-wrapper">
+                <img src="dist/images/b-banner-top-food.jpg" alt="" title="">
+            </div>
+            <div class="b-banner-top__content">
+                <h1 class="b-banner-top__title">Hosting Made Easy</h1>
+                <a href="#" class="b-btn-rounded-red">Food</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>

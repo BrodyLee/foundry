@@ -1,0 +1,277 @@
+@import "../../common/variables.less";
+
+.b-contact-page {
+  background-color: #f4f8f9;
+  margin-top: 140px;
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  &__container {
+    max-width: 1041px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+  }
+  &__chick-fil-container {
+    padding-top: 64px;
+    padding-bottom: 123px;
+    color: @color-title;
+    .title-and-icons {
+      h2 {
+        font-family: @site-font-medium;
+        font-size: 38px;
+        margin-bottom: 40px;
+        float: left;
+      }
+      p {
+        clear: both;
+        color: @color-red-2;
+        span {
+          margin-left: 64px;
+        }
+      }
+    }
+    p {
+      font-size: 18px;
+    }
+    p:nth-of-type(4) {
+      color: @color-red-2;
+    }
+    .title {
+      font-size: 13px;
+      text-transform: uppercase;
+      margin-top: 45px;
+      font-family: @site-font-medium;
+      margin-bottom: 15px;
+    }
+    .week-info {
+      display: flex;
+      .days {
+        width: 195px;
+      }
+      p:first-of-type {
+        margin-bottom: 16px;
+        color: @color-title;
+      }
+    }
+  }
+  .b-social-icons {
+    padding-right: 55px;
+    a {
+      color: @color-red-2;
+    }
+  }
+
+}
+
+
+.b-join-our-mailing-list {
+  color: @color-title;
+  padding-bottom: 127px;
+  &__dotted-block {
+    margin-bottom: 83px;
+    background-color: #df1e2c;
+    height: 50px;
+  }
+  p:first-of-type {
+    color: @color-title;
+    margin-bottom: 60px;
+    .star {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+  .info {
+    max-width: 830px;
+    width: 100%;
+    line-height: 25px;
+  }
+  a {
+    color: @color-red-2;
+    font-family: @site-font-medium;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .uppercase {
+    .star {
+      vertical-align: baseline;
+    }
+  }
+
+  .b-btn-rounded-red {
+    margin-bottom: 65px;
+  }
+}
+
+.b-feedback {
+  background-color: @color-blue;
+  padding-top: 78px;
+  padding-bottom: 87px;
+  h1 {
+    color: white;
+    margin-bottom: 24px;
+    font-size: 52px;
+  }
+  p {
+    color: white;
+    font-size: 24px;
+    line-height: 48px;
+    a {
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+.b-contact-2nd {
+  margin-top: 140px;
+  color: @color-title;
+  .splitter {
+    width: 100%;
+    height: 21px;
+    background-color: @color-beige;
+    margin-bottom: 47px;
+  }
+  p {
+    max-width: 866px;
+    width: 100%;
+    font-size: 17px;
+    line-height: 33px;
+    margin-bottom: 41px;
+  }
+  label {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    cursor: pointer;
+    input {
+      margin-right: 26px;
+    }
+  }
+  .b-btn-rounded-red {
+    margin-top: 71px;
+    //margin-bottom: 173px;
+  }
+}
+
+@media (max-width: 1070px ) {
+  .b-contact-page__container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 650px ) {
+  .b-join-our-mailing-list {
+    .birthday {
+      select:first-of-type {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .b-contact-page {
+    .b-social-icons {
+      padding-right: 0;
+    }
+  }
+}
+
+@media (max-width: 578px ) {
+
+  .b-contact-page__chick-fil-container .week-info .days {
+    width: 160px;
+  }
+
+    .b-contact-page__container {
+      padding-left: 21px;
+      padding-right: 26px;
+    }
+    .b-contact-page__title {
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+
+  .b-contact-page {
+    &__chick-fil-container {
+      padding-top: 47px;
+      padding-bottom: 60px;
+      .week-info p:first-of-type {
+        margin-bottom: 5px;
+      }
+      .title-and-icons {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          margin-bottom: 10px;
+          font-size: 26px;
+        }
+        .b-social-icons {
+          order: 3;
+        }
+        p {
+          order: 2;
+          span {
+            display: block;
+            margin-left: 0;
+            margin-top: 10px;
+            margin-bottom: 23px;
+          }
+        }
+      }
+      p {
+        font-size: 16px;
+      }
+      .title {
+        font-size: 12px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .b-join-our-mailing-list {
+    padding-bottom: 180px;
+    &__dotted-block {
+      margin-bottom: 47px;
+    }
+    p:first-of-type {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+    .info {
+      display: none;
+    }
+    a {
+      display: none;
+    }
+    .birthday {
+      select:first-of-type {
+        margin-bottom: 20px;
+      }
+    }
+    .checkbox-container {
+      input[type="checkbox"] {
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
+      }
+    }
+    .b-btn-rounded-red {
+      margin: 0 auto;
+    }
+  }
+
+  .b-feedback {
+    display: none;
+  }
+
+  //.b-contact-2nd {
+  //  .b-btn-rounded-red {
+  //    margin: 50px auto 0 auto;
+  //  }
+  //}
+}

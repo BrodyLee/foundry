@@ -1,0 +1,125 @@
+@import "../../common/variables.less";
+
+.b-events {
+  @media (max-width: @max-width-1180) {
+    margin-left: 0;
+    padding: 30px;
+  }
+  @media (max-width: @max-width-880) {
+    text-align: center;
+    padding: 40px 15px 90px;
+    background-image: none;
+  }
+  position: relative;
+  background: @color-beige url("../images/bg-b-events.png") no-repeat top right;
+  margin-left: 15px;
+  box-sizing: border-box;
+  padding: 28px 70px 38px;
+  &__header {
+    overflow: hidden;
+  }
+  &__title {
+    @media (max-width: @max-width-1024) {
+      float: none;
+    }
+    @media (max-width: @max-width-880) {
+      color: @color-blue-2;
+    }
+    float: left;
+    color: @color-gray-3;
+    font: 34px/42px 'ApercuBold';
+    margin: 0;
+    padding: 0;
+  }
+  &__link-all {
+    @media (max-width: @max-width-1024) {
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 0;
+    }
+    @media (max-width: @max-width-880) {
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: 38px;
+      left: 0;
+      right: 0;
+      margin: 0;
+      z-index: 20;
+    }
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    color: @color-red-2;
+    display: block;
+    float: left;
+    font: 14px/17px 'ApercuMedium';
+    margin: 20px 0 0 40px;
+    transition: color 0.3s ease;
+    &:hover {
+      color: @color-hover;
+    }
+  }
+  &__dots {
+    color: @color-gray-4;
+    font: 26px/44px 'ApercuBold';
+    letter-spacing: 6.7px;
+    @media (max-width: @max-width-880) {
+      color: @color-blue-2;
+    }
+    @media (max-width: @max-width-650) {
+      font-size: 20px;
+    }
+  }
+  &__list {
+    list-style: none;
+    display: block;
+    padding: 15px 0 0;
+    margin: 0;
+  }
+  &__list-item {
+    display: block;
+    position: relative;
+    & + & {
+      @media (max-width: @max-width-880) {
+        padding-top: 40px;
+        &:before {
+          content: '....................';
+          position: absolute;
+          text-align: center;
+          color: @color-blue-2;
+          font-size: 20px;
+          line-height: 32px;
+          height: 40px;
+          width: 100%;
+          left: 0;
+          right: 0;
+          top: 0;
+        }
+      }
+      padding-top: 14px;
+    }
+  }
+  &__list-item-title {
+    display: block;
+    > a {
+      @media (max-width: @max-width-650) {
+        color: @color-blue-2;
+        font-size: 18px;
+      }
+      color: @color-blue;
+      text-decoration: none;
+      font: 22px/32px 'ApercuBold';
+      transition: color 0.3s ease;
+    }
+  }
+  &__list-item-date {
+    @media (max-width: @max-width-650) {
+      font-size: 18px;
+    }
+    display: block;
+    color: @color-text;
+    font: 18px/32px 'ApercuRegular';
+  }
+}

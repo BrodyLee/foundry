@@ -1,0 +1,31 @@
+{
+  "name": "storefront-redesign",
+  "version": "0.1.0",
+  "description": "Storefront Redesign Frontend",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-cli": "^1.2.0",
+    "grunt-combine-mq": "^0.9.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-csso": "^2.2.0",
+    "less": "^2.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://anton-p-ysbm@bitbucket.org/foundrylocal/cfa.ow.storefront.git"
+  },
+  "keywords": [
+    "storefront",
+    "redesign"
+  ],
+  "author": "anton.paskevsky@leansquad.com",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/foundrylocal/cfa.ow.storefront#readme"
+}

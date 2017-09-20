@@ -1,0 +1,28 @@
+@import "../../common/variables.less";
+
+.b-large-banner {
+  @media (max-width: @max-width-880) {
+    margin: 0 -15px;
+  }
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  //height: 860px;
+  background: #ccc;
+  margin: 0 8px 0 22px;
+  &__slider {
+    display: block;
+    position: relative;
+    line-height: 0;
+    font-size: 0;
+    text-align: center;
+    > img {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 100%;
+      height: auto;
+      border: none;
+    }
+  }
+}

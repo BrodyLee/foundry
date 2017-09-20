@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storefront Redesign - Home Page</title>
+    <link rel="stylesheet" href="dist/css/style.min.css" type="text/css" media="all">
+	<script src="dist/js/plugins.js"></script>
+	<script src="dist/js/main.js"></script>
+	<script>
+        var cfg = {
+            IMG_BASE: 'http://f4.cfarestaurant.com',
+            JSON_BASE: 'http://f4.features.cfarestaurant.com.s3.amazonaws.com/storefront/stores',
+            store: 'bakerlane',
+        };
+        function jsonp(o) {
+            console.log(o);
+            /*$('.b-header__logo>span').text(o.Store.storeInfo.StoreName);
+            $('.b-header__logo').attr('href', o.Store.storeInfo.MarketableURL);*/
+            return o;
+        }
+        (function() {
+          var storefrontJSON = cfg.JSON_BASE + '/' + cfg.store + '/' + cfg.store + '.jsonp?jsoncallback=?';
+          $.getJSON(storefrontJSON);
+        })();
+	</script>
+</head>
+<body>
+
+    <div class="site-wrapper">
+
+        <!-- Header -->
+        <header class="b-header" id="siteHeader">
+            <div class="container">
+                <a href="#" class="b-header__logo">
+                    <img src="dist/images/b-header__logo.png" alt="" title="">
+                    <span>Seneca</span>
+                </a>
+                <a href="#" class="b-header__logo-small">
+                    <img src="dist/images/b-header__logo-small.jpg" alt="" title="">
+                    <span>Seneca</span>
+                </a>
+                <a href="#" class="b-btn-rounded-red">Order Food</a>
+                <ul class="b-header__menu">
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- end Header -->
+
+        <div class="site-container m-home" id="siteContainer">
+            <div class="b-banner-top" id="bBannerTop">
+                <div class="b-banner-top__image-wrapper">
+                    <img src="dist/images/b-banner-top-jobs.jpg" alt="" title="">
+                </div>
+                <div class="b-banner-top__content">
+                    <h1 class="b-banner-top__title">Come Work With Us</h1>
+                    <a href="#" class="b-btn-rounded-red">Jobs</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row m-pt-8 clear-fix table">
+                    <div class="col-xs-6 table-cell">
+                        <div class="col-content">
+                            <div class="b-operator clear-fix">
+                                <div class="b-operator__image">
+                                    <div><img src="dist/images/b-operator__image.png" alt="" title=""></div>
+                                </div>
+                                <div class="b-operator__content">
+                                    <div class="b-operator__text-wrapper">
+                                        <div class="b-operator__text">
+                                            <span>I’m Herb Tyler, Owner and Operator of Chick-fil-A Seneca. I’m proud to lead our dedicated team and serve your family the Chick-fil-A way.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 table-cell">
+                        <div class="b-contacts">
+                            <h2 class="b-contacts__title">Chick-fil-A Seneca</h2>
+                            <div class="b-contacts__content">
+                                <div class="b-contacts__top">
+                                    <div class="b-contacts__address">1612 Sandifer Blvd, Seneca, SC 29678</div>
+                                    <a href="#">Map</a>
+                                    <div class="b-contacts__phone">864-886-9080</div>
+                                </div>
+                                <div class="b-contacts__schedule">
+                                    <span>Monday - Saturday</span>
+                                    <span>6:00 AM - 10:00 PM</span>
+                                    <span>Closed on Sunday</span>
+                                </div>
+                            </div>
+                            <div class="b-social-icons">
+                                <label>CONNECT WITH US</label>
+                                <a href="#" class="b-social-icons__item m-wide"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="b-social-icons__item m-wide"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="b-social-icons__item m-wide"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-pt-8 clear-fix table">
+                    <div class="col-xs-38-p table-cell">
+                        <div class="b-contacts m-wide">
+                            <h2 class="b-contacts__title">Chick-fil-A Seneca</h2>
+                            <div class="b-contacts__content">
+                                <div class="b-contacts__top">
+                                    <div class="b-contacts__address">1612 Sandifer Blvd, Seneca, SC 29678</div>
+                                    <a href="#">Map</a>
+                                    <div class="b-contacts__phone">864-886-9080</div>
+                                </div>
+                                <div class="b-contacts__schedule m-wide">
+                                    <span>Monday - Saturday</span>
+                                    <span>6:00 AM - 10:00 PM</span>
+                                    <span>Closed on Sunday</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-22-p table-cell text-center">
+                        <div class="b-social-icons m-center">
+                            <label>CONNECT WITH US</label>
+                            <a href="#" class="b-social-icons__item m-wide m-small"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="b-social-icons__item m-wide m-small"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="b-social-icons__item m-wide m-small"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-38-p table-cell">
+                        <ul class="b-footer__menu m-center">
+                            <li class="b-footer__menu-item m-center">
+                                <a href="#" class="b-footer__menu-link m-center">MOBILE ORDERING</a>
+                            </li>
+                            <li class="b-footer__menu-item m-center">
+                                <a href="#" class="b-footer__menu-link m-center">WIFI</a>
+                            </li>
+                            <li class="b-footer__menu-item m-center">
+                                <a href="#" class="b-footer__menu-link m-center">PLAYGROUND</a>
+                            </li>
+                            <li class="b-footer__menu-item m-center">
+                                <a href="#" class="b-footer__menu-link m-center">DRIVE THRU</a>
+                            </li>
+                            <li class="b-footer__menu-item m-center">
+                                <a href="#" class="b-footer__menu-link m-center">CATERING</a>
+                            </li>
+                            <li class="b-footer__menu-item m-center">
+                                <a href="#" class="b-footer__menu-link m-center">CATERING DELIVERY</a>
+                            </li>
+                            <li class="b-footer__menu-item m-center">
+                                <a href="#" class="b-footer__menu-link m-center">MOBILE PAYMENT</a>
+                            </li>
+                            <li class="b-footer__menu-item m-center">
+                                <a href="#" class="b-footer__menu-link m-center">ONLINE ORDERING</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row clear-fix">
+                    <div class="col-xs-6 m-narrow">
+                        <div class="b-large-banner">
+                            <div class="b-large-banner__slider" id="bLargeBannerSlider">
+                                <img src="dist/images/b-large-banner__image-1.png" alt="" title="">
+                                <img src="dist/images/b-large-banner__image-2.png" alt="" title="">
+                                <img src="dist/images/b-large-banner__image-3.png" alt="" title="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-no-padding m-narrow">
+                        <div class="b-events">
+                            <div class="b-events__header">
+                                <h2 class="b-events__title">Upcoming Events</h2>
+                                <a href="#" class="b-events__link-all">ALL EVENTS</a>
+                            </div>
+                            <div class="b-events__dots">•••</div>
+                            <ul class="b-events__list">
+                                <li class="b-events__list-item">
+                                    <span class="b-events__list-item-title">
+                                        <a href="#">Mother Son Date Night</a>
+                                    </span>
+                                    <span class="b-events__list-item-date">June 22, 4 PM - 7 PM</span>
+                                </li>
+                                <li class="b-events__list-item">
+                                    <span class="b-events__list-item-title">
+                                        <a href="#">Lemonade Taste Test</a>
+                                    </span>
+                                    <span class="b-events__list-item-date">June 24, 1 PM - 5 PM</span>
+                                </li>
+                                <li class="b-events__list-item">
+                                    <span class="b-events__list-item-title">
+                                        <a href="#">Spirit Night - Landmark High School</a>
+                                    </span>
+                                    <span class="b-events__list-item-date">July 7, 5 PM - 8 PM</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="b-announcements">
+                            <div class="b-announcements__slider" id="bAnnouncementsSlider">
+                                <div class="b-announcements__item">
+                                    <a href="#" class="b-announcements__item-image">
+                                        <img src="dist/images/b-announcements__item-image.png" alt="" title="">
+                                    </a>
+                                    <div class="b-announcements__item-content">
+                                        <div class="b-announcements__item-title">
+                                            <a href="#">Congrats Liberty High Basketball!</a>
+                                        </div>
+                                        <div class="b-announcements__item-text">
+                                            Chick-fil-A Seneca wants to extend a big congratulations to the Liberty High
+                                            basketball team on their win over Barker High. Way to go Generals!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-announcements__item">
+                                    <a href="#" class="b-announcements__item-image">
+                                        <img src="dist/images/b-announcements__item-image.png" alt="" title="">
+                                    </a>
+                                    <div class="b-announcements__item-content">
+                                        <div class="b-announcements__item-title">
+                                            <a href="#">Congrats Liberty High Basketball!</a>
+                                        </div>
+                                        <div class="b-announcements__item-text">
+                                            Chick-fil-A Seneca wants to extend a big congratulations to the Liberty High
+                                            basketball team on their win over Barker High. Way to go Generals!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-announcements__item">
+                                    <a href="#" class="b-announcements__item-image">
+                                        <img src="dist/images/b-announcements__item-image.png" alt="" title="">
+                                    </a>
+                                    <div class="b-announcements__item-content">
+                                        <div class="b-announcements__item-title">
+                                            <a href="#">Congrats Liberty High Basketball!</a>
+                                        </div>
+                                        <div class="b-announcements__item-text">
+                                            Chick-fil-A Seneca wants to extend a big congratulations to the Liberty High
+                                            basketball team on their win over Barker High. Way to go Generals!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-announcements__slider-navigation" id="bAnnouncementsSliderNavigation">
+                                <a href="#" class="b-announcements__slider-navigation-link m-active">•</a>
+                                <a href="#" class="b-announcements__slider-navigation-link">•</a>
+                                <a href="#" class="b-announcements__slider-navigation-link">•</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="b-catering">
+                <div class="b-catering__image">
+                    <img src="dist/images/b-catering__image-2.jpg" alt="" title="">
+                </div>
+                <div class="b-catering__content">
+                    <div class="b-catering__title">Let Us Cater Your Next Gathering</div>
+                    <div class="b-catering__text">
+                        Our Chick-fil-A restaurant provides Catering with an easy-to-order process and delicious food for your guests.
+                    </div>
+                    <div class="b-catering__link">
+                        <a href="#">LEARN MORE ABOUT OUR CATERING</a>
+                    </div>
+                    <a href="#" class="b-btn-rounded-red">Order Catering</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="b-footer">
+        <div class="container">
+            <div class="b-footer__content">
+                <div class="b-contacts">
+                    <h2 class="b-contacts__title">Chick-fil-A Seneca</h2>
+                    <div class="b-contacts__content">
+                        <div class="b-contacts__top">
+                            <div class="b-contacts__address">
+                                1612 Sandifer Blvd, Seneca, SC 29678
+                            </div>
+                            <a href="#">Map</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="b-footer__menu">
+                    <li class="b-footer__menu-item">
+                        <a href="#" class="b-footer__menu-link">MOBILE ORDERING</a>
+                    </li>
+                    <li class="b-footer__menu-item">
+                        <a href="#" class="b-footer__menu-link">WIFI</a>
+                    </li>
+                    <li class="b-footer__menu-item">
+                        <a href="#" class="b-footer__menu-link">PLAYGROUND</a>
+                    </li>
+                    <li class="b-footer__menu-item">
+                        <a href="#" class="b-footer__menu-link">DRIVE THRU</a>
+                    </li>
+                    <li class="b-footer__menu-item">
+                        <a href="#" class="b-footer__menu-link">CATERING</a>
+                    </li>
+                    <li class="b-footer__menu-item">
+                        <a href="#" class="b-footer__menu-link">CATERING DELIVERY</a>
+                    </li>
+                    <li class="b-footer__menu-item">
+                        <a href="#" class="b-footer__menu-link">MOBILE PAYMENT</a>
+                    </li>
+                    <li class="b-footer__menu-item">
+                        <a href="#" class="b-footer__menu-link">ONLINE ORDERING</a>
+                    </li>
+                </ul>
+                <div class="b-social-icons">
+                    <a href="#" class="b-social-icons__item"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="b-social-icons__item"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="b-social-icons__item"><i class="fa fa-instagram"></i></a>
+                </div>
+
+                <div class="b-copyright">
+                    <p>This Chick-fil-A restaurant unit is an independently owned and operated franchise business.</p>
+                    <p>© 2017 CFA Properties, Inc. Chick-fil-A®, Chick-fil-A Stylized®, Eat Mor Chikin® and the Chick-fil-A Cows® are registered trademarks of CFA Properties, Inc.</p>
+                    <ul class="b-copyright__menu">
+                        <li class="b-copyright__menu-item"><a href="#">Privacy Policy</a></li>
+                        <li class="b-copyright__menu-item"><a href="#">Legal Notice</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end Footer -->
+
+</body>
+</html>
